@@ -1,0 +1,6 @@
+# Python environments / notebooks
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+*.py[cod]
+.DS_Store
