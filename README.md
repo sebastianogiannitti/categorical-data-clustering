@@ -17,9 +17,9 @@ The primary selection criterion of this particular exercise is **balanced cluste
 
 *The method/parameters are selected by minimum BPI with silhouette as a tie-breaker, rather than assumed beforehand. For a controlled comparison, agglomerative linkage is selected while holding the cluster count fixed at the K-Means choice.*
 
-![K-Means selection metrics](figures/kmeans_metrics.png)
+![K-Means selection metrics](figures/kmeans_metrics.svg)
 
-![Sizes of selected clusters](figures/cluster_sizes.png)
+![Sizes of selected clusters](figures/cluster_sizes.svg)
 
 **Interpretation:** K-Means produces the most balanced partitions *under this selection rule on this synthetic dataset*. This is **not evidence of ground-truth classes or general clustering quality**. The silhouette values are modest, cluster IDs are arbitrary, and the `k=10` result lies at the upper edge of the tested range. The data are synthetic and have no defined cluster labels.
 
@@ -56,8 +56,8 @@ Choose **Kernel → Restart & Run All**. The notebook loads `data/synthetic_cate
 ├── data/
 │   └── synthetic_categorical_data.tsv
 ├── figures/
-│   ├── cluster_sizes.png
-│   └── kmeans_metrics.png
+│   ├── cluster_sizes.svg
+│   └── kmeans_metrics.svg
 ├── results/
 │   ├── final_comparison.csv
 │   ├── hierarchical_linkages.csv
